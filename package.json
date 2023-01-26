@@ -22,6 +22,7 @@
     "buffer": "^6.0.3",
     "buffer-es6": "^4.9.3",
     "cohere-ai": "^5.0.2",
+    "dotenv": "^16.0.3",
     "jpeg-js": "^0.4.4",
     "lz-string": "^1.4.4",
     "react": "^18.2.0",
