@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/netlify-lambda serve lambda",
-    "build": "./node_modules/.bin/netlify-lambda build lambda"
+    "build": "cd functions && npm i && cd .. && netlify-lambda build lambda"
   },
   "author": "",
   "license": "ISC",
