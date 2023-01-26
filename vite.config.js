@@ -11,6 +11,6 @@ Object.keys(process.env).forEach((key) => {
 
 
 export default defineConfig({
-  plugins: [react()],
-  define: viteEnv
+  define: viteEnv,
+  plugins: [react()]
 });
