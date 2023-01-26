@@ -80,6 +80,7 @@ function App() {
       setAlertMsg("");
       setLoading(false);
       setPhoto("");
+      setInputLanguage("auto")
     } else {
       setAlertMsg("The Languages seem to be matching, try again.");
     }
@@ -139,7 +140,7 @@ function App() {
       ) : (
         <></>
       )}
-      <img src="src\assets\logo.svg" className="logo" />
+      <img src="/src/assets/logo.svg" className="logo" />
       <h2>Tap to Summarize Text</h2>
       {cameraOpen ? (
         <CameraComponent
