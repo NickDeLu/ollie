@@ -140,7 +140,7 @@ function App() {
       ) : (
         <></>
       )}
-      <img src="/src/assets/logo.svg" className="logo" />
+      <img src="/logo.svg" className="logo" />
       <h2>Tap to Summarize Text</h2>
       {cameraOpen ? (
         <CameraComponent
