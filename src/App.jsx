@@ -20,9 +20,9 @@ import TitleIcon from "@mui/icons-material/Title";
 import Alert from "@mui/material/Alert";
 import { useSpring, animated } from "@react-spring/web";
 
-const aiprompt_brief = "now make a summary of all the prior text as a list:";
+const aiprompt_brief = "now make a summary of all the prior text as a list";
 const aiprompt_indepth =
-  "now make a summary of all the prior text and include any locations, names, and dates involved:";
+  "now make a summary of all the prior text and include any locations, names, and dates involved";
 
 function App() {
   const [text, setText] = useState("");
@@ -65,11 +65,11 @@ function App() {
       setTranslatedText(translatation);
       console.log(translatation);
       const sumtext1 = await generateText(
-        `${translatation} \n ${aiprompt_brief}`,
+        `${translatation} \n ${aiprompt_brief} written in ${languages.filter(l=>l.code == desiredLanguage)[0].name}:`,
         50
       );
       const sumtext2 = await generateText(
-        `${translatation} \n ${aiprompt_indepth}`,
+        `${translatation} \n ${aiprompt_indepth} written in ${languages.filter(l=>l.code == desiredLanguage)[0].name}:`,
         100
       );
       console.log(sumtext1)
