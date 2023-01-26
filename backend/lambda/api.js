@@ -64,10 +64,10 @@ router.post("/api/imageToText", async (req, res) => {
   }
 });
 
-// app.listen(process.env.PORT || 8080, () => {
-//   console.log(
-//     `ollie listening at http://localhost:${process.env.PORT || 8080}`
-//   );
-// });
+app.listen(process.env.PORT || 8080, () => {
+  console.log(
+    `ollie listening at http://localhost:${process.env.PORT || 8080}`
+  );
+});
 
 module.exports.handler = serverless(app)
