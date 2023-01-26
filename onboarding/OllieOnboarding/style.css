@@ -1,0 +1,165 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  background-color: #2D2D2D;
+  color: white;
+  display: flex;
+  font-family: Inter, sans-serif;
+}
+
+
+#summarize{
+  display: none;
+}
+
+text{
+  font-size: 16px;
+}
+.header{
+  padding: 50px 30px;
+}
+#logo{
+  width: 250px;
+  height: 258px;
+  display: inline-flex;
+}
+
+#image{
+  width: 295px;
+  height: 372px;
+  padding: 60px 0px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#imagefull{
+  width: 381px;
+  height: 381px;
+  padding: 60px 0px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#imagetranslate{
+  width: 298px;
+  height: 151px;
+  padding: 60px 0px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  margin-top:120px;
+}
+h2{
+  font-size: 32px;
+  font-family: Craftwork Sans;
+}
+
+@font-face {
+   font-family: CraftworkSans;
+   src: url(craftworksans_bold.woff);
+}
+
+text{
+  font-family: Inter, sans-serif;
+  
+}
+
+
+/* Start of progress ellipses */
+.circle{
+  display: flex;
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.circle #dot1{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFDF29;
+  border: 0.5px solid #ffdf29;
+  align-self: center;
+
+}
+
+.circle #dot2{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+
+.circle #dot3{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+
+/* Full Text Ellipses */
+.circle #dot1full{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+.circle #dot2full{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFDF29;
+  border: 0.5px solid #ffdf29;
+  align-self: center;
+}
+.circle #dot3full{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+
+.circle #dot1text{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+.circle #dot2text{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+.circle #dot3text{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFDF29;
+  border: 0.5px solid #f8f8f8;
+  align-self: center;
+}
+/* End of progress ellipses */
+
+.logo{
+  text-align: center;
+  padding: 50px 0px;
+  display: inline-block;
+  margin: auto;
+  width: 390px;
+  height: 390px;
+}
+
+#fulltext{
+  float: right;
+  color: #f8f8f8;
+  text-decoration: none;
+  font-family: Craftwork Sans;
+  
+}

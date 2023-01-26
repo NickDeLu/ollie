@@ -1,0 +1,38 @@
+.container {
+  width: 330px;
+  height: 500px;
+  padding: 20px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: start;
+}
+
+.selector_container {
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  color: black;
+  margin-top: 20px;
+}
+
+.result_translation {
+  color: #3d3d3d;
+  font-size: 15px;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.fullTranslationButton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
