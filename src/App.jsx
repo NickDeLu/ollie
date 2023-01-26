@@ -11,7 +11,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import languages from "./assets/langs";
-import { getTextSummary, generateText } from "./services/cohere";
+import { generateText } from "./services/cohere";
 import CameraComponent from "./components/CameraComponent";
 import MyModal from "./components/output.jsx";
 import Summary from "./components/Summary";
@@ -72,8 +72,11 @@ function App() {
         `${translatation} \n ${aiprompt_indepth}`,
         100
       );
-      setSummarizedText1(sumtext1.data.body.generations[0].text);
-      setSummarizedText2(sumtext2.data.body.generations[0].text);
+      console.log(sumtext1)
+      setSummarizedText1(sumtext1.data.text);
+      console.log(sumtext2)
+
+      setSummarizedText2(sumtext2.data.text);
       setAlertMsg("");
       setLoading(false);
       setPhoto("");
